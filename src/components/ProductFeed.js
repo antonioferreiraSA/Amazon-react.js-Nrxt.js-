@@ -3,10 +3,10 @@ import React from 'react'
 
 function ProductFeed({products}) {
   return (
-    <div className='grid grid-flow-row-dense  md:-mt-52'> 
+    <div className='grid grid-flow-row-dense  md:-mt-52 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4'> 
     {/* md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 */}
       <h1>products here</h1>
-    {products.slice(0,1).map(({id, title, price, description, category, image}) => (
+    {products.slice(0,2).map(({id, title, price, description, category, image}) => (
      <Product 
      key={id}
      id={id}
